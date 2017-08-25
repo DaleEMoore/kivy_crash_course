@@ -26,7 +26,6 @@ Video 14: Using a ScreenManager - https://www.youtube.com/watch?v=xx-NLOg6x8o
 # Perhaps video1.py, video2.py, ...
 
 # Could I use main.py to be the menu to video1.py ... video14.py?
-# TODO; How do I implement the switch/case statment in python?
 # https://www.pydanny.com/why-doesnt-python-have-switch-case.html
 def video1():
     print ("Video 1")
@@ -77,43 +76,52 @@ def video14():
 
 # display video 1 .. video 14 menu
 print(videos)
-# user input 1 .. 14
-# TODO; why does this not allow me to enter the value "1"?
-item = input("From the list above: ")
-print("You selected item '" + str(item) + "'.")
-# error check what integer 1 .. 14 was entered.
-if item == str(1):
-    results =video1()
-elif item == str(2):
-    results =video2()
-elif item == str(3):
-    results =video3()
-elif item == str(4):
-    results =video4()
-elif item == str(5):
-    results =video5()
-elif item == str(6):
-    results =video6()
-elif item == str(7):
-    results =video7()
-elif item == str(8):
-    results =video8()
-elif item == str(9):
-    results =video9()
-elif item == str(10):
-    results =video10()
-elif item == str(11):
-    results =video11()
-elif item == str(12):
-    results =video12()
-elif item == str(13):
-    results =video13()
-elif item == str(14):
-    results =video14()
-else:
-    print("I only understand items 1 .. 14, but; you entered '" + str(item) + "'!")
+while True:
+    # user input 1 .. 14
+    # why does this not allow me to enter the value "1"? Well - it does now. I wonder what happened those 24 hours?
+    # TODO; can't I do some fancy entry using kivy here?
+    item = input("From the list above, Videos to re-display or eXit to leave: ")
+    print("You selected item '" + str(item) + "'.")
+    # error check what integer 1 .. 14 was entered.
+    results = ''
+    # See the switch/case statment in python, if x: y() elif: z: ...
+    if item == 'V' or item == 'v':
+        print(videos)
+    elif item == 'X' or item == 'x':
+        print("eXit requested.")
+        exit()
+    elif item == str(1):
+        results =video1()
+    elif item == str(2):
+        results =video2()
+    elif item == str(3):
+        results =video3()
+    elif item == str(4):
+        results =video4()
+    elif item == str(5):
+        results =video5()
+    elif item == str(6):
+        results =video6()
+    elif item == str(7):
+        results =video7()
+    elif item == str(8):
+        results =video8()
+    elif item == str(9):
+        results =video9()
+    elif item == str(10):
+        results =video10()
+    elif item == str(11):
+        results =video11()
+    elif item == str(12):
+        results =video12()
+    elif item == str(13):
+        results =video13()
+    elif item == str(14):
+        results =video14()
+    else:
+        print("You entered '" + str(item) + "' and I don't understand that!")
 
-#results = numbers_to_functions_to_strings(item)
-print("Results: " + str(results))
-# TODO; allow some way to specify multiples (1 3 9) or (all)?
-pass
+    #results = numbers_to_functions_to_strings(item)
+    print("Results: " + str(results))
+    # TODO; allow some way to specify multiples (1 3 9) or (all)?
+    pass
