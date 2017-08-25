@@ -13,6 +13,11 @@
 # got bin/?.apk, emailed and tried to install on my Android and got "package appears to be corrupt" which MIGHT BE
 # that the package is not compatible or does not include everything that's necessary. There is a requirements, somewhere,
 # that will include required packages.
+# How do I know why "App not installed. The package appears to be corrupt"?
+# https://mobilityarena.com/fix-application-not-installed-error-androids/
+# Can't find any indication from Android why. Hunt and peck amongst 7 possible causes and 8 solutions.
+# reboot - no improvement, same error.
+#
 
 
 def main():
