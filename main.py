@@ -30,59 +30,90 @@ Video 14: Using a ScreenManager - https://www.youtube.com/watch?v=xx-NLOg6x8o
 # https://www.pydanny.com/why-doesnt-python-have-switch-case.html
 def video1():
     print ("Video 1")
+    import video1
+    video1.main()
+    return 1
 def video2():
     print ("Video 2")
+    import video2
+    video2.main()
+    return 2
 def video3():
     print ("Video 3")
+    return 3
 def video4():
     print ("Video 4")
+    return 4
 def video5():
     print ("Video 5")
+    return 5
 def video6():
     print ("Video 6")
+    return 6
 def video7():
     print ("Video 7")
+    return 7
 def video8():
     print ("Video 8")
+    return 8
 def video9():
     print ("Video 9")
+    return 9
 def video10():
     print ("Video 10")
+    return 10
 def video11():
     print ("Video 11")
+    return 11
 def video12():
     print ("Video 12")
+    return 12
 def video13():
     print ("Video 13")
+    return 13
 def video14():
     print ("Video 14")
+    return 14
 
-# TODO; if 1 execute video1.py, ... 14
-def numbers_to_functions_to_strings(argument):
-    switcher = {1 : video1,
-              2 : video2,
-              3 : video3,
-              4 : video4,
-              5 : video5,
-              6 : video6,
-              7 : video7,
-              8 : video8,
-              9 : video9,
-              10 : video10,
-              11 : video11,
-              12 : video12,
-              13 : video13,
-              14 : video14,
-              }
-    func = switcher.get(argument,lambda:"nothing")
-    func()
-
-# TODO; display video 1 .. video 14 menu
+# display video 1 .. video 14 menu
 print(videos)
-# TODO; user input 1 .. 14
+# user input 1 .. 14
+# TODO; why does this not allow me to enter the value "1"?
 item = input("From the list above: ")
 print("You selected item '" + str(item) + "'.")
-# TODO; error check what integer 1 .. 14 was entered.
-results = numbers_to_functions_to_strings(item)
+# error check what integer 1 .. 14 was entered.
+if item == str(1):
+    results =video1()
+elif item == str(2):
+    results =video2()
+elif item == str(3):
+    results =video3()
+elif item == str(4):
+    results =video4()
+elif item == str(5):
+    results =video5()
+elif item == str(6):
+    results =video6()
+elif item == str(7):
+    results =video7()
+elif item == str(8):
+    results =video8()
+elif item == str(9):
+    results =video9()
+elif item == str(10):
+    results =video10()
+elif item == str(11):
+    results =video11()
+elif item == str(12):
+    results =video12()
+elif item == str(13):
+    results =video13()
+elif item == str(14):
+    results =video14()
+else:
+    print("I only understand items 1 .. 14, but; you entered '" + str(item) + "'!")
+
+#results = numbers_to_functions_to_strings(item)
+print("Results: " + str(results))
 # TODO; allow some way to specify multiples (1 3 9) or (all)?
 pass
