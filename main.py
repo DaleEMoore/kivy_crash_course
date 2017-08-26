@@ -1,6 +1,9 @@
 #! /usr/bin/python3
 # This came from: https://kivy.org/docs/tutorials/crashcourse.html
 
+__author__ = "DaleEMoore@gMail.Com"
+__version__ = "0.2" # TODO; increment this thing frequently; or automatically.
+
 # Dale's plan. Start here https://github.com/inclement/kivycrashcourse and
 # follow the Videos for each section. The sections I'd like to cover first:
 videos = """
@@ -19,6 +22,11 @@ Video 12: Using Android APIs - https://www.youtube.com/watch?v=8Jwp1PTvECI&featu
 Video 13: Using Kivy's settings panel - https://www.youtube.com/watch?v=oQdGWeN51EE
 Video 14: Using a ScreenManager - https://www.youtube.com/watch?v=xx-NLOg6x8o
 """
+
+heading = "kivy_crash_course version " + __version__ \
+    + " by " + __author__ \
+    + "\n" + videos
+
 # Well that looks like all of them.
 #
 # Perhaps I should use the same approach as I did for the Python Think like a
@@ -75,7 +83,7 @@ def video14():
     return 14
 
 # display video 1 .. video 14 menu
-print(videos)
+print(heading)
 while True:
     # user input 1 .. 14
     # why does this not allow me to enter the value "1"? Well - it does now. I wonder what happened those 24 hours?
