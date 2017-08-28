@@ -149,6 +149,8 @@ emulator: WARNING: Not all modern X86 virtualization features supported, which i
 # Can I run android applications in an emulator from PyCharm?
 # https://www.jetbrains.com/help/idea/running-and-debugging-android-applications.html
 
+# How about I build the very minimal app to buildozer to my Android phone?
+
 
 
 
