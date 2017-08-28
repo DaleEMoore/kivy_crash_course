@@ -2,7 +2,7 @@
 # This came from: https://kivy.org/docs/tutorials/crashcourse.html
 
 __author__ = "DaleEMoore@gMail.Com"
-__version__ = "0.2" # TODO; increment this thing frequently; or automatically.
+__version__ = "0.3" # TODO; increment this thing frequently; or automatically.
 
 # Dale's plan. Start here https://github.com/inclement/kivycrashcourse and
 # follow the Videos for each section. The sections I'd like to cover first:
