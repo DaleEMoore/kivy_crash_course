@@ -146,6 +146,9 @@ emulator: WARNING: Not all modern X86 virtualization features supported, which i
 # Hmmm... Something's missing, run a build is needed.build the project and try again.
 # No difference or improvement.
 
+# Can I run android applications in an emulator from PyCharm?
+# https://www.jetbrains.com/help/idea/running-and-debugging-android-applications.html
+
 
 
 
